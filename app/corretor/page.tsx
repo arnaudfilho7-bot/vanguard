@@ -284,10 +284,11 @@ export default function CorretorPage() {
                 </div>
 
                 <a
-                  href={`https://wa.me/${lead.whatsapp.replace(
-                    /\D/g,
-                    ""
-                  )}`}
+                 href={`https://wa.me/${
+  lead.whatsapp.replace(/\D/g, "").startsWith("55")
+    ? lead.whatsapp.replace(/\D/g, "")
+    : "55" + lead.whatsapp.replace(/\D/g, "")
+}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 block rounded-xl bg-cyan-500 px-4 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-400"
