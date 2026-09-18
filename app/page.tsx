@@ -92,26 +92,31 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      {/* HEADER */}
-      <header className="border-b border-white/10 bg-slate-950/95">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide text-white">
-              VANGUARD
-            </h1>
+    {/* HEADER */}
+    <header className="border-b border-white/10 bg-slate-950/95">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-            <p className="text-xs tracking-[0.25em] text-cyan-400">
-              NEGÓCIOS IMOBILIÁRIOS
-            </p>
-          </div>
-
-          <div className="hidden rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 md:block">
-            Atendimento personalizado
-          </div>
+        {/* VANGUARD */}
+        <div>
+          <h1 className="text-2xl font-bold tracking-[0.25em] text-white">
+            VANGUARD
+          </h1>
+          <p className="mt-1 text-xs font-semibold tracking-[0.2em] text-cyan-400">
+  SONHARE
+</p>
         </div>
-      </header>
 
-      {/* CONTEÚDO PRINCIPAL */}
+        {/* LOGO SONHARE */}
+        <div className="flex items-center">
+          <img
+            src="/logos/sonhare.png"
+            alt="Sonhare Imóveis"
+            className="h-28 w-auto object-contain"
+          />
+        </div>
+
+      </div>
+    </header>
       <section className="relative overflow-hidden">
         <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
         <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
