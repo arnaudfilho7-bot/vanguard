@@ -42,11 +42,15 @@ export default function AdminPage() {
       data: { user },
     } = await supabase.auth.getUser();
 
-    if (!user) {
-      router.replace("/login");
-      return;
-    }
+   if (!user) {
+  router.replace("/login");
+  return;
+}
 
+if (user.email !== "admin.1@vanguard.com") {
+  router.replace("/corretor");
+  return;
+}
     setVerificandoLogin(false);
     carregarDados();
   }
