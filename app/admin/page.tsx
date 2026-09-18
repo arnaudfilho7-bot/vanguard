@@ -279,7 +279,11 @@ if (user.email !== "admin.1@vanguard.com") {
 
                       <td className="px-5 py-4">
                         <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                          {lead.status}
+                          {lead.status === "Reunião Agendada"
+  ? "Visita Agendada"
+  : lead.status === "Ganho"
+  ? "Fechado"
+  : lead.status}
                         </span>
                       </td>
                     </tr>
