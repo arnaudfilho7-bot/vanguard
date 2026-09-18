@@ -21,7 +21,11 @@ export default function LoginPage() {
     return;
   }
 
+  if (email.toLowerCase() === "admin.1@vanguard.com") {
+  window.location.href = "/admin";
+} else {
   window.location.href = "/corretor";
+}
 }
 
   return (
